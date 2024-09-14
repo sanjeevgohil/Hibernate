@@ -1,0 +1,5 @@
+package com.example.hibernatecrud.com.example.hibernatecrud;
+
+public class HibernateUtil {
+
+}

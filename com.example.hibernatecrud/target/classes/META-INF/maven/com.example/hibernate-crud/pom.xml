@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>hibernate-crud</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Archetype - hibernate-crud</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <!-- Hibernate Core -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>5.6.3.Final</version> <!-- Ensure this version matches the Hibernate version you are using -->
+    </dependency>
+
+    <!-- MySQL Connector/J -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.29</version> <!-- Ensure this version is compatible with your MySQL version -->
+    </dependency>
+
+    <!-- C3P0 Connection Pool -->
+    <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>0.9.5.5</version> <!-- Version for C3P0 -->
+    </dependency>
+
+    <!-- Hibernate Validator (optional for validation) -->
+    <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>6.2.0.Final</version> <!-- Version for Hibernate Validator -->
+    </dependency>
+
+    <!-- JUnit (for testing) -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+</project>
